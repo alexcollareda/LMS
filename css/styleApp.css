@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body {
+color: #FFF;
+font-family:'Exo', sans-serif;
+}
+
+label{
+color: #FFF;
+font-family:'Exo', sans-serif;
+}
+
+a{
+color: #FFF;
+font-family:'Exo', sans-serif;
+}
+
+
+input{
+  font-family:'Exo', sans-serif;
+}
+
+input[type=text]{   
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    box-shadow: 1px 1px 1px #FFF;    
+    -moz-box-shadow: 1px 1px 1px #FFF;
+    -webkit-box-shadow: 1px 1px 1px #FFF;
+    background: #FFF; 
+    border:1px solid #FFF;
+    width:50%;
+     font-family:'Exo', sans-serif;
+}
+ 
+input[type=text]:hover, textarea:hover{ 
+         background: #CCCCCC; border:1px solid #FFF;
+        font-family:'Exo', sans-serif;
+}
+ 
+input[type=submit]{
+}
+
+legend{
+color: #FFF;
+font-family:'Exo', sans-serif;
+font-size: 110%;
+}
+
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 3px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+            font-size: 110%;
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+            font-size: 110%;
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+            font-size: 110%;
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+            font-size: 110%;
+        }
