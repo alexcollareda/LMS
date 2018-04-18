@@ -40,6 +40,96 @@
       </ul>
     </li>
 
+    <li class='sub-menu'>
+        <a >
+          <div class='fa fa-university'></div>
+          Alunos
+          <div class='fa fa-caret-down right'></div>
+        </a>
+        <ul>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/cadastro_aluno.html'">
+              Novo Aluno
+            </a>
+          </li>
+        </ul>
+      </li>
+<li class='sub-menu'>
+      <a href='#settings'>
+        <div class='fa fa-book'></div>
+        Disciplinas
+        <div class='fa fa-caret-down right'></div>
+      </a>
+      <ul>
+        <li>
+          <a onclick="document.getElementById('embContent').src='views/cadastro_disciplina.html'">
+            Nova Disciplina
+          </a>
+        </li>
+        <li>
+          <a onclick="document.getElementById('embContent').src='views/paginacursos.html'">
+            Consultar Disciplinas
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href='index.html'>
+        <div class='fa fa-times-circle'></div>
+        Logout
+      </a>
+    </li>
+  </ul>
+</nav>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+<div align="right">
+  <embed id="embContent" src="default" width="800" height="600"></embed>
+</div>
+</body>
+</html><!DOCTYPE html>
+<html >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="UTF-8">
+  <title>OPE Da Depressão</title>
+  <link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+  <link rel='stylesheet prefetch' href='css/fontawesome-all.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+</head>
+
+<body>
+  <nav class='animated bounceInDown'>
+  <ul>
+    <li>
+      <a onclick="document.getElementById('embContent').src=''">
+        <div class='fa fa-home'></div>
+        Início
+      </a>
+    </li>
+    <li class='sub-menu'>
+      <a >
+        <div class='fa fa-university'></div>
+        Cursos
+        <div class='fa fa-caret-down right'></div>
+      </a>
+      <ul>
+        <li>
+          <a onclick="document.getElementById('embContent').src='views/cadastro_curso.html'">
+            Novo Curso
+          </a>
+        </li>
+        <li>
+          <a onclick="document.getElementById('embContent').src='views/ListaCursos.html'">
+            Consultar Cursos
+          </a>
+        </li>
+      </ul>
+    </li>
+
 <li class='sub-menu'>
       <a href='#settings'>
         <div class='fa fa-book'></div>
