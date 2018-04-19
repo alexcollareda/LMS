@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro de Aluno
+    </title>
+    <link rel="stylesheet" href="../css/styleApp.css">
+</head>
+
+<body>
+    <form class="pure-form pure-form-stacked" name="cadastro" method="post">
+        <fieldset>
+            <legend>Cadastro de Aluno</legend>
+
+            <label>Login:</label>
+            <input type="text" name="loginAluno" maxlength="10" placeholder="Digite o Login" required>
+            <br/><br/>
+            <label>Nome Aluno:</label>
+            <input type="text" name="nomeAluno" maxlength="100" placeholder="Digite o nome completo do aluno" required>
+            <br/><br/>
+            <label>E-mail:</label>
+            <input type="text" name="emailAluno" maxlength="100" placeholder="seuemailaqui@email.com.br" required>
+            <br/><br/>
+            <label>Celular:</label>
+            <input type="text" name="celularAluno" maxlength="13" placeholder="EX:(11)999999999" required>
+            <br/><br/>
+            <label>Data de Nascimento:</label>
+            <input type="date" name="dtNascimento" maxlength="10" placeholder="EX:01/01/1990" required>
+            <br/><br/>
+            <label>CPF:</label>
+            <input type="text" name="cpfAluno" maxlength="11" placeholder="XXX.XXX.XXX-XX" required>
+            <br/><br/>
+            <label>Senha:</label>
+            <input type="password" name="senhaAluno1" maxlength="30" placeholder="*****" required>
+            <br/><br/>
+            <label>Confirme a Senha:</label>
+            <input type="password" name="senhaAluno2" maxlength="30" placeholder="*****" required>
+
+            <br/><br/>
+            <div align="right">
+                <input class="button-secondary" type="submit" value="Cadastrar">
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

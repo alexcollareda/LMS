@@ -15,7 +15,7 @@
   <nav class='animated bounceInDown'>
   <ul>
     <li>
-      <a onclick="document.getElementById('embContent').src='default'">
+      <a onclick="document.getElementById('embContent').src=''">
         <div class='fa fa-home'></div>
         Início
       </a>
@@ -39,7 +39,20 @@
         </li>
       </ul>
     </li>
-
+    <li class='sub-menu'>
+        <a >
+          <div class='fa fa-university'></div>
+          Alunos
+          <div class='fa fa-caret-down right'></div>
+        </a>
+        <ul>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/cadastro_aluno.html'">
+              Novo Aluno
+            </a>
+          </li>
+        </ul>
+      </li>
 <li class='sub-menu'>
       <a href='#settings'>
         <div class='fa fa-book'></div>
@@ -71,7 +84,7 @@
 
     <script src="js/index.js"></script>
 <div align="right">
-  <iframe id="embContent" src="default" width="800" height="600" style="border:0px;"></iframe>
+  <embed id="embContent" src="default" width="800" height="600"></embed>
 </div>
 </body>
 </html>
