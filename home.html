@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,65 +14,80 @@
 
 <body>
   <nav class='animated bounceInDown'>
-  <ul>
-    <li>
-      <a onclick="document.getElementById('embContent').src=''">
-        <div class='fa fa-home'></div>
-        Início
-      </a>
-    </li>
-    <li class='sub-menu'>
-      <a >
-        <div class='fa fa-university'></div>
-        Cursos
-        <div class='fa fa-caret-down right'></div>
-      </a>
-      <ul>
-        <li>
-          <a onclick="document.getElementById('embContent').src='views/cadastro_curso.html'">
+    <ul>
+      <li>
+        <a onclick="document.getElementById('embContent').src=''">
+          <div class='fa fa-home'></div>
+          Início
+        </a>
+      </li>
+      <li class='sub-menu'>
+        <a>
+          <div class='fa fa-university'></div>
+          Cursos
+          <div class='fa fa-caret-down right'></div>
+        </a>
+        <ul>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/cadastro_curso.html'">
             Novo Curso
           </a>
-        </li>
-        <li>
-          <a onclick="document.getElementById('embContent').src='views/ListaCursos.html'">
+          </li>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/ListaCursos.html'">
             Consultar Cursos
           </a>
-        </li>
-      </ul>
-    </li>
+          </li>
+        </ul>
+      </li>
 
-<li class='sub-menu'>
-      <a href='#settings'>
-        <div class='fa fa-book'></div>
-        Disciplinas
-        <div class='fa fa-caret-down right'></div>
-      </a>
-      <ul>
-        <li>
-          <a onclick="document.getElementById('embContent').src='views/cadastro_disciplina.html'">
+      <li class='sub-menu'>
+        <a>
+          <div class='fa fa-university'></div>
+          Alunos
+          <div class='fa fa-caret-down right'></div>
+        </a>
+        <ul>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/cadastro_aluno.html'">
+              Novo Aluno
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class='sub-menu'>
+        <a href='#settings'>
+          <div class='fa fa-book'></div>
+          Disciplinas
+          <div class='fa fa-caret-down right'></div>
+        </a>
+        <ul>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/cadastro_disciplina.html'">
             Nova Disciplina
           </a>
-        </li>
-        <li>
-          <a onclick="document.getElementById('embContent').src='views/paginacursos.html'">
+          </li>
+          <li>
+            <a onclick="document.getElementById('embContent').src='views/paginacursos.html'">
             Consultar Disciplinas
           </a>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <a href='index.html'>
-        <div class='fa fa-times-circle'></div>
-        Logout
-      </a>
-    </li>
-  </ul>
-</nav>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href='index.html'>
+          <div class='fa fa-times-circle'></div>
+          Logout
+        </a>
+      </li>
+    </ul>
+  </nav>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
-<div align="right">
-  <embed id="embContent" src="default" width="800" height="600"></embed>
-</div>
+  <script src="js/index.js"></script>
+  <div align="right">
+    <iframe id="embContent" src="default" width="800" height="600" style="border:0px;"></iframe>
+  </div>
 </body>
+
 </html>
