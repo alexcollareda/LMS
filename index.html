@@ -165,13 +165,11 @@ body{
 				<input type="text" placeholder="usuário" name="user" required><br>
 				<input type="password" placeholder="senha" name="password" required><br>
 				<input type="checkbox"  value="Salvar acesso"><label style="color:#FFF">Salvar Login</label>
-				<input type="submit"  value="Login">
+			<input type="submit"></input>
+			<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
 		</div>
 		</form>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
-
 </body>
 
 </html>
