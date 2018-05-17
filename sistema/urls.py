@@ -20,5 +20,5 @@ admin.autodiscover()
  
 app_name = 'yourapp'
 urlpatterns = [
-    url(r'^$', LoginView.as_view(template_name='yourapp/index.html'), name="index"),
+    url(r'^login/$',views.loginView,name='login'),
 ]
