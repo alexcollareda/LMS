@@ -1,13 +1,19 @@
-from django.contrib.auth.views import login
-from django.contrib.auth.forms import AuthenticationForm
+def login_user(request):
+logout(request)
+username = password = ''
+form1 = RegistrationForm()
+if request.POST:
+    username = request.POST['username']
+    password = request.POST['password']
 
-def loginView(request):
-if request.method == 'POST':
-    form = AuthenticationForm(data=request.POST)
-    if form.is_valid():
-        user = form.get_user()
-        login(request,user)
-        return redirect('/website/profile/')
-else:
-    form = AuthenticationForm()
-return render(request,'website/login.html',{'form':form})
+    user = authenticate(username=username, password=password)
+    if user is not None:
+        login(request, user)
+        return redirect("redirect any whre u want")
+
+return render(request, 'Write login templaye address')
+
+def logout_user(request):
+    user = request.user
+    logout(request, user)
+    return redirect("redirect any whre u want")
