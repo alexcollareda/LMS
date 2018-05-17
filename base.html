@@ -1,23 +1,25 @@
-<form method="post" action="/user/login/" novalidate>
+<html>
+<body>
+            <form method="post" action="/user/login/" novalidate>
             {% csrf_token %}
 
 
-                    <input class="form-control" id="id_username" name="username" placeholder=""
-                           required="" type="text"
-                           style="">
+                    <input id="id_username" name="username" placeholder="" required="" type="text"
+                         style="">
                 </div>
                 <div class="form-group">
 
-      <span class="material-icons" style=""
-      >lock</span>
-                    <input class="form-control" id="password1" name="password" style="" autofocus=""
+      <span style="">lock</span>
+                    <input id="password1" name="password" style="" autofocus=""
                            placeholder=""
                            required=""
                            type="password">
                 </div>
 
-                <button class="btn btn-primary" type="submit" style=""></button>
+                <button type="submit" style=""></button>
             </div>
 
 
         </form>
+</body>
+</html>
