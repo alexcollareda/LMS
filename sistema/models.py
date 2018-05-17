@@ -71,7 +71,7 @@ class Disciplina(models.Model):
     ID_COORDENADOR = models.ForeignKey(Cordenador)
     id_Disciplina = models.IntegerField(null=False, primary_key=True)
     NOME = models.CharField(max_length=30, null=False, unique=False)
-    data models.DateField(auto_now=True)
+    data =  models.DateField(auto_now=True)
     PLANO_ENSINO = models.CharField(max_length=100)
     CARGA_HORARIA = models.CharField(max_length=30, choices=CARGA_HORARIA_CHOICES)
     COMPETENCIAS = models.CharField(max_length=300)
