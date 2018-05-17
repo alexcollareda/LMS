@@ -160,13 +160,11 @@ body{
 			<div>OPE<span> da Depressão</span></div>
 		</div>
 		<br>
-		<form name="login" method="POST">
+		<form name="login" method="POST" action="home.html">
 			<div class="login">
 				<input type="text" placeholder="usuário" name="user" required><br>
 				<input type="password" placeholder="senha" name="password" required><br>
 				<input type="checkbox"  value="Salvar acesso"><label style="color:#FFF">Salvar Login</label>
-				{% csrf_token %}
-				{{form.as_p}}
 				<input type="submit"></input>
 			</div>
 		</form>
