@@ -1,4 +1,4 @@
-def entrar(request):
+"""def entrar(request):
     context = {}
     if request.method == "POST":
         if autenticar(request):
@@ -6,3 +6,4 @@ def entrar(request):
         else:
             context["erro"] = "Problemas no login"
             return render(request, "home.html", context)
+"""
